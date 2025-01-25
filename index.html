@@ -16,5 +16,13 @@
             const examTime = document.getElementById('examTime').value;
             // 変数に保管
             let 試験時間 = examTime;
+    // ここで変数【試験時間】を使用できます
+            console.log(`試験時間: ${試験時間} 分`);
+
+            // localStorageに保管
+            localStorage.setItem('examTime', examTime);
+            // 次のページに移動
+            window.location.href = 'listening-settings.html';
+        }
 
     <p style="font-size:10px;color:gray">Copyright © 2025 nakatto_k. All rights reserved.</p>
