@@ -10,19 +10,7 @@
     <p style="font-size:14px">設定を押して続行します</p>
     <label for="examTime">試験時間を入力（分）:</label>
     <button type="submit">設定</button>
-    <input type="number" id="examTime" name="examTime" required>
-    function submitForm() {
-            // 入力された値を取得
-            const examTime = document.getElementById('examTime').value;
-            // 変数に保管
-            let 試験時間 = examTime;
-    // ここで変数【試験時間】を使用できます
-            console.log(`試験時間: ${試験時間} 分`);
-
-            // localStorageに保管
-            localStorage.setItem('examTime', examTime);
-            // 次のページに移動
-            window.location.href = 'listening-settings.html';
-        }
+    <input type="number" id="試験時間" name="examTime" required>
+    
 
     <p style="font-size:10px;color:gray">Copyright © 2025 nakatto_k. All rights reserved.</p>
