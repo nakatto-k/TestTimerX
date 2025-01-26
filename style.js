@@ -3,4 +3,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.getElementById('試験時間')
 .addEventListener('click', () => { ... })
-const inputValue = document.getElementById('textInput').value;
+const 試験時間 = document.getElementById('試験時間').value;
+console.log('入力された値:', 試験時間);
