@@ -15,13 +15,11 @@
     <button type="button" onclick="saveTestTime()">保存</button>
 </form>
  <script>
-    // JavaScript関数を定義
     function saveTestTime() {
-        // テキストボックスの値を取得
         var testTime = document.getElementById("testTimeInput").value;
-        console.log("試験時間: " + testTime);
-        // 変数 testTime を使って他の処理を行う
+        var nextPageUrl = "2.html?testTime=" + encodeURIComponent(testTime);
+        window.location.href = nextPageUrl;
     }
-</script>   
+</script>
     
     <p style="font-size:10px;color:gray">Copyright © 2025 nakatto_k. All rights reserved.</p>
