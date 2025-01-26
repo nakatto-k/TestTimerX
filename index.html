@@ -8,15 +8,20 @@
     <hr>
     <h2 style="color:blue">ようこそ！！まずは試験時間を設定してください！</h2>
     <p style="font-size:14px">設定を押して続行します</p>
-    <label for="examTime">試験時間を入力（分）:</label>
-    <button id="試験時間";>設定</button>
-    <input type="number" id="試験時間" name="試験時間" required>
 
-    <script>
-    document.getElementById('試験時間').addEventListener('click', () => {
-        const inputValue = document.getElementById('試験時間').value;
-        console.log('入力された値:', inputValue); // コンソールに出力
-    });
-</script>
+    <form>
+    <label for="testTimeInput">試験時間を入力してください:</label>
+    <input type="text" id="testTimeInput" name="testTimeInput">
+    <button type="button" onclick="saveTestTime()">保存</button>
+</form>
+ <script>
+    // JavaScript関数を定義
+    function saveTestTime() {
+        // テキストボックスの値を取得
+        var testTime = document.getElementById("testTimeInput").value;
+        console.log("試験時間: " + testTime);
+        // 変数 testTime を使って他の処理を行う
+    }
+</script>   
     
     <p style="font-size:10px;color:gray">Copyright © 2025 nakatto_k. All rights reserved.</p>
