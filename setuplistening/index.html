@@ -4,7 +4,7 @@
   </hard>
   <body>
     <h1 style="color:gray;text-decoration: underline;">🕗テストTimerX</h1>
-    <p style="font-size:12px;color:gray">｜使い方｜利用規約｜フィードバック｜情報｜　made by nakatto_k</p>
+    <p style="font-size:12px;color:gray">｜使い方｜利用規約｜フィードバック｜情報｜</p>
     <hr>
     <h2 style="color:blue">リスニングのURLを入力</h2>
     <p style="font-size:14px">設定を押して続行します</p>
@@ -17,7 +17,7 @@
  <script>
     function saveTestTime() {
         var testTime = document.getElementById("listening_url").value;
-        var nextPageUrl = "/index.html?testTime=" + encodeURIComponent(testTime);
+        var nextPageUrl = "TestTimerX/go/index.html?testTime=" + encodeURIComponent(testTime);
         window.location.href = nextPageUrl;
     }
 </script>
